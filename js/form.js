@@ -13,6 +13,8 @@ function bmi(){
         bmiC.textContent="your BMI is: "+bmi.toFixed(2)+ " and you are Normal";
       }else if (bmi < 30){
         bmiC.textContent="your BMI is: "+bmi.toFixed(2)+ " and you are Overweight";
+        //array class fit him will be add to the list
+        
       }else{
         bmiC.textContent="your BMI is: "+bmi.toFixed(2)+ " and you are Obese";
       }
