@@ -28,11 +28,16 @@ for (var i = 0; i < names.length; i++) {
 // 3.1: set function will be called to add the selected image (after creating a new object)to the selectedFavourite array
 //      and will also check if the user wants to add or delete the image from the his favourites (step 5)
 function set(imgId) {
+
     newSelectFav = Sport.all[imgId];
+    console.log('before store',selectedFavourite);
 
     if (!selectedFavourite.includes(newSelectFav)) { // if the new object is not reapeted addd it to the array to display it
         selectedFavourite.push(newSelectFav);
+        console.log('before store',selectedFavourite);
         storeFav();
+        console.log('after store',selectedFavourite);
+
     }
     else {
         //remove from selectedFavourite 
@@ -57,10 +62,8 @@ function storeFav() {
 
 // Step 4: Getting the stored objects from the local storage
 function getFavMainPage() {
-
     selectedFavourite = JSON.parse(localStorage.getItem('fav')) || [];
     storeFav();
-
 }
 getFavMainPage();
 
@@ -75,6 +78,8 @@ function deleteFromLocalStorage(itemName) { // to delete a reapeted element
                 newArray.push(arr[i]);
             }
         }
+        selectedFavourite= newArray;
+        console.log(selectedFavourite);
         localStorage.clear();
         var favArray = JSON.stringify(newArray);
         localStorage.setItem('fav', favArray);
