@@ -10,7 +10,7 @@
   <header></header>
   <main>
 <form action="" id="form1"></form>
-<fieldset>
+<fieldset id="formF">
     <legend>Form...:</legend>
 <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
@@ -18,13 +18,14 @@
   <input type="text" id="height" name="height"><br>
   <label for="wieght">Enter your wieght:</label><br>
   <input type="text" id="wieght" name="wieght"><br>
-  <input type="submit" value="Submit"><br>
+  <input type="submit" value="calculate your BMI" onclick="bmi()"><br>
+  <input type="reset" value="Reset the fieldset " onclick="resetForm()" ><br>
   <label for="BMI">calculate your BMI:</label><br>
-  <!-- <input type="text" id="BMI" name="BMI"><br> -->
-  <textarea name="message" rows="20" cols="50" id="result">
+  <textarea name="message" rows="10" cols="50" id="result">
    your BMI and your suggstion for the class
    
 </textarea><br>
+
 <input list="class">
 <datalist id="class">
   <option value="A">
@@ -33,9 +34,12 @@
   <option value="D">
   <option value="E">
 </datalist><br>
+<input type="submit" value="add to cart" onclick="addToCart()">
+
 </fieldset>
 
   </main> 
-  <footer></footer> 
+  <footer></footer>
+  <script src="js/form.js"></script> 
 </body>
 </html>
