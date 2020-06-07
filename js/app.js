@@ -35,7 +35,7 @@ function set(imgId) {
     if (!selectedFavourite.includes(newSelectFav)) { // if the new object is not reapeted addd it to the array to display it
         selectedFavourite.push(newSelectFav);
         console.log('before store',selectedFavourite);
-        storeFav();
+        storeFav1();
         console.log('after store',selectedFavourite);
 
     }
@@ -54,7 +54,7 @@ function set(imgId) {
 
 // 3.2: Storing favourite classes to the local storage
 
-function storeFav() {
+function storeFav1() {
     // var favArray = JSON.stringify(Fav.all);
     var favArray = JSON.stringify(selectedFavourite);
     localStorage.setItem('fav', favArray);
@@ -63,7 +63,7 @@ function storeFav() {
 // Step 4: Getting the stored objects from the local storage
 function getFavMainPage() {
     selectedFavourite = JSON.parse(localStorage.getItem('fav')) || [];
-    storeFav();
+    storeFav1();
 }
 getFavMainPage();
 
