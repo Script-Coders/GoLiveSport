@@ -3,7 +3,8 @@
     
 } */
 
-img{
+#imgfav img{
     width: 10%;
     height: 10%;
+    margin-top: 50%;
 }
