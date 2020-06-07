@@ -1,0 +1,171 @@
+/* input {
+    width: 10%;
+  }
+
+
+
+  input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+    background-color: #d0dd2027;
+    color: rgba(67, 109, 4, 0.808);
+    padding: 8px 15px;
+    font-size: medium;
+   
+    transition: width 0.4s ease-in-out;
+    
+  }
+  input[type=text]:focus {
+    width: 100%;
+  }
+
+  #result{
+    border: none;
+    border-bottom: 2px solid red;
+    width: 100%;
+    background-color: #d0dd2027;
+    color: rgba(67, 109, 4, 0.808);
+    font-size: medium;
+    
+  }
+
+  #formF{
+    background-color: #d0dd2027;
+
+  }
+ #mySelect {
+    width: 100%;
+    padding: 12px 16px;
+    border:red solid 2px;
+    border-radius: 20px;
+ 
+    
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #09f715;
+  }
+  input[type=Reset]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+   
+  }
+  input[type=Reset]:hover {
+    background-color: #09f715;
+  } */
+
+  label {
+    display: block;
+    letter-spacing: 4px;
+    /* padding-top: 5px; */
+    text-align: center;
+    padding: 0 20% 0 0;
+    color: white;
+  }
+
+  #submit {
+    background: transparent;
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 20px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 550px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+
+  }
+  #submit:hover, button:focus {
+    background-color: white;
+    color: #333333;
+  }
+
+  #reset {
+    background: transparent;
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 20px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 550px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+
+  }
+  #reset:hover, button:focus {
+    background-color: white;
+    color: #333333;
+  }
+
+  input[type=text] {
+    background: transparent;
+    color:white;
+    border: 2px solid #F0F0F0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px 550px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+  }
+#result{
+    background: transparent;
+    color:white;
+    border: 2px solid #F0F0F0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px 550px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+
+}
+#formF{
+    background-color: black;
+    color: white;
+}
+
+#mySelect {
+    background: transparent;
+    color:white;
+    border: 2px solid #F0F0F0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px 550px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+ 
+    
+  }
