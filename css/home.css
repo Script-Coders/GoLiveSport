@@ -9,13 +9,15 @@
       font-size: 50px;
       display: inline-block;
       margin:0 0 0 2%;
-      color: rgba(67, 109, 4, 0.808);
+      color: #436d04ce;
   }
   #home{
       margin:0 0 0 0;
       /* position: fixed; */
       background-color: #fcf3f3;
       padding: 1% 0 47.5px 0;
+      opacity: 0.6;
+      z-index: 9999;
 
   }
 
@@ -90,6 +92,7 @@ footer{
          background-color: gray;
          padding: 2% 0 1% 0;
          margin: 3% 0 0 0;
+         opacity: 0.8;
          position: static;
          bottom: 0;
          width: 100%;
