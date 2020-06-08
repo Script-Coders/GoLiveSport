@@ -71,10 +71,10 @@
   label {
     display: block;
     letter-spacing: 4px;
-    /* padding-top: 5px; */
+    padding-top: 5px;
     text-align: center;
     padding: 0 20% 0 0;
-    color: white;
+    color: #436d04ce;
   }
 
   #submit {
@@ -121,7 +121,7 @@
 
   input[type=text] {
     background: transparent;
-    color:white;
+    color:rgb(255, 255, 255);
     border: 2px solid #F0F0F0;
     font-size: 15px;
     letter-spacing: 2px;
@@ -132,6 +132,8 @@
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
+
+
   }
 #result{
     background: transparent;
@@ -152,7 +154,9 @@
     /* background-color: black; */
     display: block;
     background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-photo%2Fcute-blonde-woman-doing-fitness-background-brick-wall-house-during-quarantine_8373520.htm&psig=AOvVaw32XsK8H4yt7qPlVtc0c53u&ust=1591686571690000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjGlt3U8ekCFQAAAAAdAAAAABAW');
-    color: white;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    
 }
 
 #mySelect {
@@ -177,10 +181,10 @@
     font-family: sans-serif;
     /* background-image: url('../img/form-background2.jpg'); */
     /* background-image: url('../img/background3.jpg'); */
-    background-image: url('../form background test/b1.jpg');
+    /* background-image: url('../form background test/b1.jpg'); */
     /* background-image: url('../form background test/b2.jpg'); */
     /* background-image: url('../form background test/b3.jpg'); */
-    /* background-image: url('../form background test/b4.jpg'); */
+    background-image: url('../form background test/b4.jpg');
     background-repeat: no-repeat;
     
     background-size:100% 100% ;
@@ -190,5 +194,6 @@
    
   #form1{
    background-color: black;
-   opacity: .4;
+   opacity: .5;
+   
   }
