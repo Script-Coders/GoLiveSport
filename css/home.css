@@ -90,6 +90,9 @@ footer{
          background-color: gray;
          padding: 2% 0 1% 0;
          margin: 3% 0 0 0;
+         position: static;
+         bottom: 0;
+         width: 100%;
      }
 
 #footerIcons{
