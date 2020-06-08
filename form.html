@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/form.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>booking </title>
+  <title>booking </title>
 
 </head>
-<body>
-    <header id="home">
-        <div id="header-container">
-            <img src="https://freedesignfile.com/upload/2017/07/Sport-logo-vector.jpg" alt="" id="logo">
-            <h1 id="HeaderTitle">Go Live Sport</h1>
-            <nav class="top">
-                <ul id="headerList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="fav.html">Favourites</a></li>
-                    <li><a href="class.html">Class</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
 
-    </header>  <main>
-<form action="" id="form1"></form>
-<fieldset id="formF">
-    <legend>Form...:</legend>
-<label for="fname">First Name:</label>
-  <input type="text" id="fname" name="fname" placeholder="Example..." required>
-  <label for="height">Enter your height:</label>
-  <input type="text" id="height" name="height" placeholder="In cm..." required>
-  <label for="wieght">Enter your wieght:</label>
-  <input type="text" id="wieght" name="wieght" placeholder="In cm..." required>
-  <input type="submit" value="calculate your BMI" onclick="bmi()" id="submit">
-  <input type="reset" value="Reset the fieldset " onclick="resetForm()" id="reset" >
-  <label for="BMI">calculate your BMI:</label><br>
-  <textarea name="message" rows="10" cols="50" id="result">
+<body>
+  <header id="home">
+    <div id="header-container">
+      <img src="https://freedesignfile.com/upload/2017/07/Sport-logo-vector.jpg" alt="" id="logo">
+      <h1 id="HeaderTitle">Go Live Sport</h1>
+      <nav class="top">
+        <ul id="headerList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fav.html">Favourites</a></li>
+          <li><a href="class.html">Class</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <form action="" id="form1">
+    <fieldset id="formF">
+      <legend>Form...:</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="Example..." required>
+      <label for="height">Enter your height:</label>
+      <input type="text" id="height" name="height" placeholder="In cm..." required>
+      <label for="wieght">Enter your wieght:</label>
+      <input type="text" id="wieght" name="wieght" placeholder="In cm..." required>
+      <input type="submit" value="calculate your BMI" onclick="bmi()" id="submit">
+      <input type="reset" value="Reset the fieldset " onclick="resetForm()" id="reset">
+      <label for="BMI">calculate your BMI:</label><br>
+      <textarea name="message" rows="10" cols="50" id="result">
    your BMI and your suggstion for the class
   </textarea><br>
-  <!-- creat list -->
-  <select name="class fit you" id="mySelect">
+      <!-- creat list -->
+      <!-- <select name="class fit you" id="id="mySelect">
 
-  </select>
- 
+      </select> -->
 
-<!-- <input list="class">
+
+      <!-- <input list="class">
 <datalist id="class">
   <option value="A">
   <option value="B">
@@ -57,28 +60,31 @@
 </datalist><br>
 <input type="submit" value="add to cart" onclick="addToCart()"> -->
 
-</fieldset>
+    </fieldset>
+  </form>
 
-  </main> 
-    <footer>
-        <img src="https://freedesignfile.com/upload/2017/07/Sport-logo-vector.jpg" alt="" id="logo-footer">
-        <h1 id="FooterTitle">Go Live Sport</h1>
-        <div id="contact-us">
-           <a href="about-us.html"> About Us</a>
-           <a href=" "> Contact Us</a>    <!--Extra if we have more time it will lead us to anthor page-->
-        </div>
-    
-        <div id='footerIcons'>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+  </main>
+  <footer>
+    <img src="https://freedesignfile.com/upload/2017/07/Sport-logo-vector.jpg" alt="" id="logo-footer">
+    <h1 id="FooterTitle">Go Live Sport</h1>
+    <div id="contact-us">
+      <a href="about-us.html"> About Us</a>
+      <a href=" "> Contact Us</a>
+      <!--Extra if we have more time it will lead us to anthor page-->
+    </div>
 
-        </div>
+    <div id='footerIcons'>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+
+    </div>
 
 
   </footer>
-  <script src="js/form.js"></script> 
+  <script src="js/form.js"></script>
 </body>
+
 </html>
