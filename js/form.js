@@ -45,6 +45,10 @@ function getArray(i) {
 // console.log(classType[1]);
 
 function bmi() {
+  if(localStorage){
+    localStorage.clear();
+    console.log("LocaStorage been cleared")
+  }
   event.preventDefault();
   var sheight = parseFloat(document.getElementById('height').value);
   var sweight = parseFloat(document.getElementById('wieght').value);
@@ -151,6 +155,7 @@ function creatTextArea() {
     document.getElementById("lable1").remove();
     document.getElementById("hr1").remove();
     document.getElementById("result").remove();
+
   }
   lable1 = document.createElement('label');
   lable1.setAttribute('for', 'BMI');
@@ -191,73 +196,117 @@ function creatTextArea() {
         <input type="radio" name="genre" value="jazz" />
         Jazz
         </p> */}
-        var p1,input1,lable2,br2;
-        // var aaaa="12346468";
+var p1, input1, lable2, br2, botton1;
+// var aaaa="12346468";
 function createRadio() {
-p1=document.createElement('p');
-p1.setAttribute('id','paraghForBooking');
-p1.textContent=`Book the training days`;
-br2 = document.createElement('br');
-br2.setAttribute('id', 'br2');
-p1.appendChild(br2);
+  if (p1) {
+    document.getElementById('paraghForBooking').remove();
+  }
+  p1 = document.createElement('p');
+  p1.setAttribute('id', 'paraghForBooking');
+  p1.textContent = `Book the training days`;
+  br2 = document.createElement('br');
+  br2.setAttribute('id', 'br2');
+  p1.appendChild(br2);
 
 
-input1=document.createElement('input');
-input1.setAttribute('type','radio');
-input1.setAttribute('value','sunday');
-input1.setAttribute('id','day1')
-lable2=document.createElement('label');
-lable2.setAttribute('for','day1');
-lable2.textContent="Sunday";
-p1.appendChild(input1);
-p1.appendChild(lable2);
+  input1 = document.createElement('input');
+  input1.setAttribute('type', 'checkbox');
+  input1.setAttribute('value', 'sunday');
+  input1.setAttribute('id', 'day1')
+  lable2 = document.createElement('label');
+  lable2.setAttribute('for', 'day1');
+  lable2.textContent = "Sunday";
+  p1.appendChild(input1);
+  p1.appendChild(lable2);
 
 
-input1=document.createElement('input');
-input1.setAttribute('type','radio');
-input1.setAttribute('value','monday');
-input1.setAttribute('id','day2')
-lable2=document.createElement('label');
-lable2.setAttribute('for','day2');
-lable2.textContent="Monday";
-p1.appendChild(input1);
-p1.appendChild(lable2);
+  input1 = document.createElement('input');
+  input1.setAttribute('type', 'checkbox');
+  input1.setAttribute('value', 'monday');
+  input1.setAttribute('id', 'day2')
+  lable2 = document.createElement('label');
+  lable2.setAttribute('for', 'day2');
+  lable2.textContent = "Monday";
+  p1.appendChild(input1);
+  p1.appendChild(lable2);
 
 
-input1=document.createElement('input');
-input1.setAttribute('type','radio');
-input1.setAttribute('value','tuesday');
-input1.setAttribute('id','day3')
-lable2=document.createElement('label');
-lable2.setAttribute('for','day3');
-lable2.textContent="Tuesday";
-p1.appendChild(input1);
-p1.appendChild(lable2);
+  input1 = document.createElement('input');
+  input1.setAttribute('type', 'checkbox');
+  input1.setAttribute('value', 'tuesday');
+  input1.setAttribute('id', 'day3')
+  lable2 = document.createElement('label');
+  lable2.setAttribute('for', 'day3');
+  lable2.textContent = "Tuesday";
+  p1.appendChild(input1);
+  p1.appendChild(lable2);
 
 
-input1=document.createElement('input');
-input1.setAttribute('type','radio');
-input1.setAttribute('value','wednesday');
-input1.setAttribute('id','day4')
-lable2=document.createElement('label');
-lable2.setAttribute('for','day4');
-lable2.textContent="Wednesday";
-p1.appendChild(input1);
-p1.appendChild(lable2);
+  input1 = document.createElement('input');
+  input1.setAttribute('type', 'checkbox');
+  input1.setAttribute('value', 'wednesday');
+  input1.setAttribute('id', 'day4')
+  lable2 = document.createElement('label');
+  lable2.setAttribute('for', 'day4');
+  lable2.textContent = "Wednesday";
+  p1.appendChild(input1);
+  p1.appendChild(lable2);
 
 
-input1=document.createElement('input');
-input1.setAttribute('type','radio');
-input1.setAttribute('value','thursday');
-input1.setAttribute('id','day5')
-lable2=document.createElement('label');
-lable2.setAttribute('for','day5');
-lable2.textContent="Thursday";
-p1.appendChild(input1);
-p1.appendChild(lable2);
+  input1 = document.createElement('input');
+  input1.setAttribute('type', 'checkbox');
+  input1.setAttribute('value', 'thursday');
+  input1.setAttribute('id', 'day5');
+  lable2 = document.createElement('label');
+  lable2.setAttribute('for', 'day5');
+  lable2.textContent = "Thursday";
+  p1.appendChild(input1);
+  p1.appendChild(lable2);
 
+  botton1 = document.createElement('input');
+  botton1.setAttribute('type', 'submit');
+  botton1.setAttribute('value', 'Book Now');
+  botton1.setAttribute('id', 'booking');
+  // botton1.setAttribute('onclick',)
+  p1.appendChild(botton1);
 
-document.getElementById('formF').appendChild(p1);
-console.log(p1);
+  document.getElementById('formF').appendChild(p1);
+  // console.log(document.getElementById('day1').checked);
+
+  // if(document.getElementById('booking')){
+
+  //   console.log(event.target.id);
+  // }
+  var booking1 = document.getElementById('booking');
+  booking1.addEventListener('click', doBooking);
 
 }
+
+
+function doBooking() {
+  event.preventDefault();
+  for (var i = 1; i <= 5; i++) {
+    if (document.getElementById(`day${i}`).checked) {
+      checkedArray.push(document.getElementById(`day${i}`).value);
+      console.log(checkedArray);
+    }
+    }
+    storeDays(checkedArray);
+    restoreDays();
+    document.getElementById('paraghForBooking').remove;
+
+
+}
+var checkedArray = [];// For booking days that user want in local storage;
+function storeDays(a){
+  localStorage.setItem('bookingDays',JSON.stringify(a))
+  // console.log(localStorage);
+
+}
+function restoreDays(){
+  
+  savedDays=JSON.parse(localStorage.getItem('bookingDays'))||[];
+  console.log(savedDays);
+}
+var savedDays;// For booking days that user want **from** local storage;
