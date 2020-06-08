@@ -93,6 +93,9 @@ footer{
          padding: 2% 0 1% 0;
          margin: 3% 0 0 0;
          opacity: 0.8;
+         position: static;
+         bottom: 0;
+         width: 100%;
      }
 
 #footerIcons{
