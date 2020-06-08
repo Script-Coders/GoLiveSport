@@ -294,7 +294,10 @@ function doBooking() {
     }
     storeDays(checkedArray);
     restoreDays();
-    document.getElementById('paraghForBooking').remove;
+    // console.log(document.getElementById('paraghForBooking'));
+    // console.log(savedDays);
+    document.getElementById('paraghForBooking').remove();
+    bookingResult();
 
 
 }
@@ -307,6 +310,24 @@ function storeDays(a){
 function restoreDays(){
   
   savedDays=JSON.parse(localStorage.getItem('bookingDays'))||[];
-  console.log(savedDays);
+  
 }
 var savedDays;// For booking days that user want **from** local storage;
+
+var article1;
+function bookingResult(){
+  article1=document.createElement('div');
+  document.getElementById('main').appendChild(article1);
+  var p2=document.createElement('p');
+  p2.textContent=`Your Booking at :`;
+  article1.appendChild(p2);
+for(var i=0;i<savedDays.length;i++){
+  var li1=document.createElement('li');
+  li1.textContent=savedDays[i];
+  article1.appendChild(li1);
+
+}
+
+
+}
+
