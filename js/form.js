@@ -1,6 +1,6 @@
 'use strict';
 
-//calculate the bmi
+
 var bmiC = document.getElementById('result');
 
 var indexCase = ['Underweight', 'Normal', 'Overweight', 'Obese'];
@@ -44,6 +44,7 @@ function getArray(i) {
 }
 // console.log(classType[1]);
 
+//calculate the bmi
 function bmi() {
   if(localStorage){
     localStorage.clear();
@@ -166,8 +167,8 @@ function creatTextArea() {
   textArea1 = document.createElement('textarea');
   textArea1.setAttribute('name', 'message');
 
-  textArea1.setAttribute('rows', '10');
-  textArea1.setAttribute('cols', '50');
+  textArea1.setAttribute('rows', '5');
+  textArea1.setAttribute('cols', '30');
   textArea1.setAttribute('id', 'result');
   textArea1.textContent = 'your BMI and your suggstion for the class';
 
