@@ -149,7 +149,9 @@
 
 }
 #formF{
-    background-color: black;
+    /* background-color: black; */
+    display: block;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-photo%2Fcute-blonde-woman-doing-fitness-background-brick-wall-house-during-quarantine_8373520.htm&psig=AOvVaw32XsK8H4yt7qPlVtc0c53u&ust=1591686571690000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjGlt3U8ekCFQAAAAAdAAAAABAW');
     color: white;
 }
 
@@ -168,4 +170,25 @@
    transition: all 0.4s;
  
     
+  }
+
+
+  body{
+    font-family: sans-serif;
+    /* background-image: url('../img/form-background2.jpg'); */
+    /* background-image: url('../img/background3.jpg'); */
+    background-image: url('../form background test/b1.jpg');
+    /* background-image: url('../form background test/b2.jpg'); */
+    /* background-image: url('../form background test/b3.jpg'); */
+    /* background-image: url('../form background test/b4.jpg'); */
+    background-repeat: no-repeat;
+    
+    background-size:100% 100% ;
+ 
+   
+  }
+   
+  #form1{
+   background-color: black;
+   opacity: .4;
   }
