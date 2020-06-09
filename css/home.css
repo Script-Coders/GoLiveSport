@@ -1,7 +1,10 @@
-  
-    
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+    /*  font-family: 'Playfair Display', serif;  */
+    /* Font for H1,h2,h3: 'Playfair Display', size: 70px
+    for p : serif, size 22px , line-height: 30px
+    Color palatte  rgba(67, 109, 4, 0.808)/ #f2f2f2; / white */
  /* Background section: book now*/
-    
+ 
      #background1 {
       opacity: .7;
       width: 53%;
@@ -230,6 +233,13 @@ background-color: gray;
   /* background-blend-mode: hard-light; */
 }
 
+#imgfav img {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
 
 #imgfav img {
 width: 100%;
@@ -241,6 +251,38 @@ height: 10%;
   margin: 96px 0 0 0;
     display: inline-block;
 }
+
+/* 
+#around {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
 
 * {
   box-sizing: border-box;
@@ -288,10 +330,12 @@ height: 10%;
 
 #watch h3{
   font-size: 55px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   color: rgba(67, 109, 4, 0.808); 
   margin: 0 0 3% 0;
+  font-family: 'Playfair Display'; 
+  font-size: 70px;
 
 }
 
@@ -398,7 +442,7 @@ nav.top li:hover {
   
 }
 nav.top li a:hover {
-  background: #7d8176ce;
+  /* background: #7d8176ce; */
   
   color: white;
 }
@@ -482,7 +526,7 @@ margin: 1% 0 0 9%;
 ----------------------------------------------------------------------------------
 */
 
-.fa {
+/* .fa {
 padding: 20px;
 font-size: 30px;
 width: 30px;
@@ -490,17 +534,34 @@ text-align: center;
 text-decoration: none;
 margin: 5px 2px;
 border-radius: 50%;
-}
+} */
 
-.fa:hover {
+/* .fa:hover {
 opacity: 0.7;
 }
 
 .fa-facebook {
 background: #3B5998;
 color: white;
+} */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 .fa-twitter {
 background: #55ACEE;
 color: white;
