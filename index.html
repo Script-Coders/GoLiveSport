@@ -15,7 +15,7 @@
 
     <header id="home">
         <div id="header-container">
-            <img src="https://freedesignfile.com/upload/2017/07/Sport-logo-vector.jpg" alt="" id="logo">
+            <img src="img/logo.png" alt="" id="logo">
             <h1 id="HeaderTitle">Go Live Sport</h1>
             <nav class="top">
                 <ul id="headerList">
@@ -30,62 +30,229 @@
     </header>
 
     <main>
-                      
-         <div id="background">
-           <!-- <button>Book now</button>
-            <p>fghij;okl''</p>-->
-        </div> 
-
-        <div id= imgfav>
-        <section id="sectionImage">
 
 
-            <img src="img/aikido.jpg" alt="">
-            <a href="javascript: set(0); " class="fav"> &#11088; </a>
-            <a href="class.html" id="aikido"> Learn More </a>
-            
+        <div class="slideshow-container">
 
-            <img src="img/bodybuilding.jpg" alt="">
-            <a href="javascript: set(1);" class="fav"> &#11088; </a>
-            <a href="class.html" id="bodybuilding"> Learn More </a>
+            <div class="mySlides fade">
+                <img src="img/back33.jpg" style="width:100%">
+                <div id="background1">
+                    <p id="firstP">
+                        Fitter!
+                        Healthier!
+                        Happier! </p>
+                    <button onclick="window.location.href='form.html'" ; id="firstB">Book NOW!</button>
 
-            <img src="img/boxing.jpg" alt="">
-            <a href="javascript: set(2);" class="fav"> &#11088; </a>
-            <a href="class.html" id="boxing"> Learn More </a>
+                </div>
+            </div>
 
-            <img src="img/hipsandabs.jpg" alt="">
-            <a href="javascript: set(3); " class="fav"> &#11088; </a>
-            <a href="class.html" id="hipsandabs"> Learn More </a>
+            <div class="mySlides fade">
+                <img src="img/background.jpg" style="width:100%">
+                <div id="background2">
+                    <p id="secP">
+                        Think Fit! <br>
+                        Git Fit! <br>
+                        Be Fit!</p>
+                    <button onclick="window.location.href='form.html'" ; id="secB">Book NOW!</button>
+                </div>
+            </div>
 
-            <img src="img/MuayThai.jpg" alt="">
-            <a href="javascript: set(4);" class="fav"> &#11088; </a>
-            <a href="class.html" id="MuayThai"> Learn More </a>
+            <div class="mySlides">
+                <img src="img/cro.jpg" style="width:100%">
+                <div id="background3">
+                    <p id="thrdP">Healthy Body <br> <br> Healthy Life</p>
+                    <button onclick="window.location.href='form.html'" ; id="thrdB">Book NOW!</button>
+                </div>
+            </div>
+            <div style="text-align:center" class="forDots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <br>
+                <br>
+                <br>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <br>
+                <br>
+                <br>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
 
-            <img src="img/yoga.jpg" alt="">
-            <a href="javascript: set(5); " class="fav"> &#11088; </a>
-            <a href="class.html" id="yoga"> Learn More </a>
+        </div>
+        <br>
 
-            <img src="img/zumba.jpg" alt="">
-            <a href="javascript: set(6);" class="fav"> &#11088; </a>
-            <a href="class.html" id="zumba"> Learn More </a>
-      
+        <p id="allimg"> WORK OUT AT HOME OR ON THE GO WITH GO LIVE SPORT
+        </p>
+        <div class="sportmenu">
 
-        </section>
-           </div>
-        <h1 id="test">Yazannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</h1>
+            <div id=imgfav>
+                <section id="sectionImage">
+                    <div class="row">
+                        <div class="column">
+                            <img src="img/aikido.jpg" title="Aikido" id="num1Img1" style="width:60%">
+                            <ul id="num1ul1">
+                                <li>
+                                    <a href="class.html" id="aikido"> Aikido </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(0); " class="fav">
+                                        <p>&#11088;</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-          
+                        <div class="column">
+
+                            <img src="img/bodybuilding.jpg" alt="" title="Body Building" id="num1Img2"
+                                style="width:100%">
+                            <ul id="num1ul2">
+                                <li>
+                                    <a href="class.html" id="bodybuilding"> Body Building </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(1);" class="fav"> &#11088; </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="column">
+
+                            <img src="img/boxing1.jpg" alt="" title="Boxing" id="num1Img3" style="width:100%;     margin-left: 20%;" >
+                            <ul id="num1ul3" style="margin-left: 20%;">
+                                <li>
+                                    <a href="class.html" id="boxing"> Boxing </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(2);" class="fav"> &#11088; </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="column">
+                            <img src="img/hipsandabs.jpg" alt="" title="Hips and Abs" id="num1Img4" style="width:89%">
+                            <ul id="num1ul4">
+                                <li>
+                                    <a href="class.html" id="hipsandabs"> Hips and Abs </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(3); " class="fav"> &#11088; </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+
+                            <img src="img/MuayThai.jpg" alt="" title="Muay Thai" id="num2Img1" style="width:78%;margin-left: 18%;">
+                            <ul id="num2ul1" style="margin-left: 18%;">
+                                <li>
+                                    <a href="class.html" id="MuayThai"> Muay Thai </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(4);" class="fav"> &#11088; </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+
+                            <img src="img/yoga.jpg" alt="" title="Yoga" id="num2Img2" style="width:98%;    margin-left:27% " >
+                            <ul id="num2ul2" style="margin-left:27% ">
+                                <li>
+                                    <a href="class.html" id="yoga"> Yoga </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(5); " class="fav"> &#11088; </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="column">
+
+                            <img src="img/zumba.jpg" alt="" title="Zumba" id="num2Img3" style="width:89%">
+                            <ul id="num2ul3">
+                                <li>
+                                    <a href="class.html" id="zumba"> Zumba </a>
+                                </li>
+                                <li>
+                                    <a href="javascript: set(6);" class="fav"> &#11088; </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+<br>
+
+<hr>
+
+        <div id="watch">
+                  <h3>Ways to watch</h3>
+                  <p id="pstream">Stream from your TV, laptop, mobile or tablet. Download workouts on iOS and Android. </p>
+                  <img src="img/tv2.png" alt="">
+
+                  <img id="app" src="img/apps.PNG" alt="">
+
+                  <p id="stream">TABLET: IPAD, ANDROID, KINDLE FIRE <br> <br>
+                    TV: SAMSUNG SMART TV, APPLE TV, AMAZON FIRE TV <br> <br>
+                    CAST: ROKU, CHROMECAST | CONSOLE: XBOX360 <br> <br>
+                    WEB: STREAM ONLINE ON DESKTOP AND MOBILE <br> <br>
+                    MOBILE: ANDROID AND iOS</p>
+
+
+ 
+
+
+
+
+        </div>
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
     <footer>
-        <img src="https://freedesignfile.com/upload/2017/07/Sport-logo-vector.jpg" alt="" id="logo-footer">
+        <img src="img/logo.png" alt="" id="logo-footer">
         <h1 id="FooterTitle">Go Live Sport</h1>
         <div id="contact-us">
-           <a href="about-us.html"> About Us</a>
-           <a href=" "> Contact Us</a>    <!--Extra if we have more time it will lead us to anthor page-->
+            <a href="about-us.html"> About Us</a>
+            <a href=" "> Contact Us</a>
+            <!--Extra if we have more time it will lead us to anthor page-->
         </div>
-    
+
         <div id='footerIcons'>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
@@ -98,7 +265,7 @@
     </footer>
     <script src="js/app.js"></script>
     <script src="js/class.js"></script>
-    
+
 
 </body>
 
