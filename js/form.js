@@ -12,6 +12,8 @@ var aclass1, aclass2, aclass3, aclass4;
 var classType = [aclass1, aclass2, aclass3, aclass4];
 var select;// this for SELECT in form. Used to initiate the SELECT element to aviod the doublecation
 var lable1, hr1, textArea1;// tags element in the form. Used to initiate the text area to aviod the doublecation 
+var enteredName;
+console.log(enteredName);
 
 function Class(name, sport) {
   this.nameClass = name;
@@ -49,6 +51,9 @@ function bmi() {
   if(localStorage){
     localStorage.clear();
     console.log("LocaStorage been cleared")
+  }
+  if(document.getElementById('articleId')){
+    document.getElementById('articleId').remove();
   }
   event.preventDefault();
   var sheight = parseFloat(document.getElementById('height').value);
@@ -99,7 +104,7 @@ function bmi() {
   var formOrigin = document.getElementById('form1');
 
 
-
+enteredName=document.getElementById('fname').value;
   resetForm(); //To reset the Form
   console.log(document.getElementById('form1'));
 }
@@ -201,7 +206,7 @@ function creatTextArea() {
 var p1, input1, lable2, br2, botton1;
 // var aaaa="12346468";
 function createRadio() {
-  if (p1) {
+  if (document.getElementById('paraghForBooking')) {
     document.getElementById('paraghForBooking').remove();
   }
   p1 = document.createElement('p');
@@ -294,12 +299,12 @@ var savedDays;// For booking days that user want **from** local storage;
 
 var article1;
 function bookingResult(){
-  article1=document.createElement('div');
+  article1=document.createElement('div'); article1.setAttribute('id','articleId');
   document.getElementById('main').appendChild(article1);
   var a3=document.getElementById("mySelect").selectedIndex;// To target the selected option for class.
   var a4=document.getElementsByTagName("option")[a3].value;// value of targeted class.
   var p2=document.createElement('p');
-  p2.textContent=`Hello ${document.getElementById('fname').value},Your class will be ${a4} at :`;
+  p2.textContent=`Hello ${enteredName},Your class will be ${a4} at :`;
   article1.appendChild(p2);
   
 for(var i=0;i<savedDays.length;i++){
