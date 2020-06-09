@@ -1,0 +1,24 @@
+body{
+    
+}
+#breifForClass{
+    /* width: 41%; */
+    margin: 4% 0 0 30%;
+}
+#breifForClass img{
+    width: 626px;
+    height: 417px;
+}
+#breifForClass p{
+    width: 59%;
+    margin: 5% 0;
+}
+#breifForClass iframe:first-of-type{
+    margin: 0 0 0 -30%;
+
+}
+#breifForClass iframe:nth-of-type(2){
+    display: inline-block;
+    margin: 0 17%;
+}
+

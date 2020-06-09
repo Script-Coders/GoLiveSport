@@ -58,7 +58,7 @@ var text1, text2, text3, text4, text5, text6, text7;
 // var nameOfSport = ['aikido', 'bodybuilding', 'boxing', 'hipsandabs', 'MuayThai', 'yoga', 'zumba'];
 framAki1 = ['https://www.youtube.com/embed/u71nroaAXnM','https://www.youtube.com/embed/ONddI-SpQoE','https://www.youtube.com/embed/fmjX7df96HM'];
 framBody2 = ['https://www.youtube.com/embed/l0gDqsSUtWo', 'https://www.youtube.com/embed/U8Li9TlGlW4','https://www.youtube.com/embed/ikqaOReLe-g'];
-framBoxing = ['https://www.youtube.com/embed/Q1Piq_vMh5g', 'https://www.youtube.com/embed/RubPEWHgT5A', 'https://www.youtube.com/embed/jCTEVKRTuS8'];
+framBoxing = ['https://www.youtube.com/embed/Q1Piq_vMh5g', 'https://www.youtube.com/embed/m-kr-Vw0VQA?start=9', 'https://www.youtube.com/embed/jCTEVKRTuS8'];
 framHipsandabs = ['https://www.youtube.com/embed/W3q2ealQ2ic', 'https://www.youtube.com/embed/SRq7XtDW0wg', 'https://www.youtube.com/embed/gC_L9qAHVJ8'];
 framMuayThai=['https://www.youtube.com/embed/Tu_mAuLjTpA','https://www.youtube.com/embed/JbK1KofAEcg','https://www.youtube.com/embed/KcIGuMn4vB4'];
 framYoga=['https://www.youtube.com/embed/4pKly2JojMw','https://www.youtube.com/embed/b6IFkfSj4Jo','https://www.youtube.com/embed/vTMdISoaKT4'];
