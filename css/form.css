@@ -71,15 +71,15 @@
   label {
     display: block;
     letter-spacing: 4px;
-    /* padding-top: 5px; */
-    text-align: center;
-    padding: 0 20% 0 0;
-    color: white;
+    padding-top: 5px;
+    /* text-align: center; */
+    /* padding: 0 20% 0 0; */
+    color: #fffb07ee;
   }
 
   #submit {
     background: transparent;
-    color: #F0F0F0;
+    color: #fffb07ee;
     border: 2px solid #F0F0F0;
     font-size: 15px;
     letter-spacing: 2px;
@@ -87,7 +87,7 @@
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    margin: 15px 550px;
+    /* margin: 15px 550px; */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
@@ -100,7 +100,7 @@
 
   #reset {
     background: transparent;
-    color: #F0F0F0;
+    color: #fffb07ee;
     border: 2px solid #F0F0F0;
     font-size: 15px;
     letter-spacing: 2px;
@@ -108,7 +108,7 @@
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    margin: 15px 550px;
+    /* margin: 15px 550px; */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
@@ -121,51 +121,87 @@
 
   input[type=text] {
     background: transparent;
-    color:white;
+    color:rgb(255, 255, 255);
+    /* color: #fffb07ee; */
     border: 2px solid #F0F0F0;
     font-size: 15px;
     letter-spacing: 2px;
     padding: 10px 50px;
     text-transform: uppercase;
     display: inline-block;
-    margin: 0px 550px;
+    /* margin: 0px 550px; */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
+
+
+  }
+/* to change the color of placeholder inside input text  */
+  ::placeholder { 
+    color: white;
+    opacity: 1; 
   }
 #result{
     background: transparent;
-    color:white;
+    color:#fffb07ee;
     border: 2px solid #F0F0F0;
     font-size: 14px;
     letter-spacing: 1px;
     padding: 10px 50px;
     text-transform: uppercase;
     display: inline-block;
-    margin: 0px 550px;
+    /* margin: 0px 550px; */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
 
 }
 #formF{
-    background-color: black;
-    color: white;
-}
+    /* background-color: black; */
+    display: inline-block;
+    color: #fffb07ee;
+   /* opacity: .2; */
+    
+  }
+      #form1{
+       /* background-color: black; */
+       /* opacity: .8; */
+       display: inline-block;
+    width: 0;
+
+      }
 
 #mySelect {
     background: transparent;
-    color:white;
+    color:#fffb07ee;
     border: 2px solid #F0F0F0;
     font-size: 14px;
     letter-spacing: 1px;
     padding: 10px 50px;
     text-transform: uppercase;
     display: inline-block;
-    margin: 0px 550px;
+    /* margin: 0px 550px; */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
  
     
   }
+
+
+  body{
+    font-family: sans-serif;
+    /* background-image: url('../img/form-background2.jpg'); */
+    /* background-image: url('../img/background3.jpg'); */
+    background-image: url('../form background test/b1.jpg');
+    /* background-image: url('../form background test/b2.jpg'); */
+    /* background-image: url('../form background test/b3.jpg'); */
+    /* background-image: url('../form background test/b4.jpg'); */
+    background-repeat: no-repeat;
+    
+    background-size:100% 100% ;
+    color: #fffb07ee;
+ 
+   
+  }
+   
