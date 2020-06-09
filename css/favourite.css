@@ -40,7 +40,13 @@
 
 #showImage section {
     position: relative;
-    height: 600px;
+    height: 400px;
     width: 100%;
     background-color: gray;
+}
+
+#showImage section h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
 }
