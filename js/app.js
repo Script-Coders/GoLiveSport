@@ -92,53 +92,39 @@ function deleteFromLocalStorage(itemName) { // to delete a reapeted element
 
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
-// for arrows
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-//for dots
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-//for displaying the correct image
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides"); // the three images
-  var dots = document.getElementsByClassName("dot");   
+// var slideIndex = 1;
+// showSlides(slideIndex);
+// // for arrows
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+// //for dots
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+// //for displaying the correct image
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides"); // the three images
+//   var dots = document.getElementsByClassName("dot");   
 
-  // this is for looping the images: if the user clicked the next arrow three times 
-  if (n > slides.length) {slideIndex = 1}     
-  if (n < 1) {slideIndex = slides.length}
+//   // this is for looping the images: if the user clicked the next arrow three times 
+//   if (n > slides.length) {slideIndex = 1}     
+//   if (n < 1) {slideIndex = slides.length}
 
-// the first step is to hide all images 
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-// display the active slide 
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+// // the first step is to hide all images 
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";  
+//   }
+// // display the active slide 
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
 
-// hide the previes slide and activate the dot of 
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+// // hide the previes slide and activate the dot of 
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+// }
 
 
-var slideIndex2 = 0;
-showSlides2();
 
-function showSlides2() {
-  var i;
-  var slides2 = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides2.length; i++) {
-    slides2[i].style.display = "none";
-  }
-  slideIndex2++;
-  if (slideIndex2 > slides2.length) {slideIndex2 = 3}
-  slides2[slideIndex2 -1].style.display = "block";
- 
-  setTimeout(showSlides2, 5000); // Change image every 2 seconds
-}
