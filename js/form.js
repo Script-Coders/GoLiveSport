@@ -107,7 +107,8 @@ function bmi() {
 
 //to clear the form
 function resetForm() {
-  console.log(document.getElementById("form1"));
+  // console.log(document.getElementById("form1").ELEMENT_NODE);
+  document.getElementById("form1").reset();
 
   // document.getElementById("form1").reset(); // we can use this instrction instead of separated for each tag in the form instructions
 
@@ -298,7 +299,7 @@ function bookingResult(){
   var a3=document.getElementById("mySelect").selectedIndex;// To target the selected option for class.
   var a4=document.getElementsByTagName("option")[a3].value;// value of targeted class.
   var p2=document.createElement('p');
-  p2.textContent=`Your class will be ${a4} at :`;
+  p2.textContent=`Hello ${document.getElementById('fname').value},Your class will be ${a4} at :`;
   article1.appendChild(p2);
   
 for(var i=0;i<savedDays.length;i++){
