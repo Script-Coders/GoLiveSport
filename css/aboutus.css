@@ -1,23 +1,14 @@
 
-  div img:hover  {
-    box-shadow: 0 0 50px 1px rgba(0, 140, 186, 0.5);
-    transform: scaleX(-1);
-    width: 200px;
-  height: 200px;
-  }
-
-  
-
   .container {
     position: relative;
     width: 100%;
-    margin: 0 0 0 17%;
+    margin: 0 0 0 15%;
 
   }
   
   .image {
     /* display: block; */
-    width: 8%;
+    width: 14%;
     height: auto;
     padding: 20px;
     border: 3px solid rgb(80, 9, 9);
@@ -33,7 +24,7 @@
     left: 0;
     right: 0;
     /* background-color:blue; */
-    opacity: .5;
+    opacity: .8;
     /* background-image: url('../img/background1.jpg'); */
     overflow: hidden;
     width: 100%;
@@ -54,9 +45,9 @@
     font-size: 50px;
     position:absolute;
     overflow: hidden;
-    top: 10%;
-    right: 35%;
-    
+    top: 2%;
+    right: 44%;
+  color: rgba(67, 109, 4, 0.808);    
     transform: translate(-10%, -10%);
     -ms-transform: translate(-10%, -10%);
   }
@@ -66,11 +57,125 @@
     /* border: groove; */
   }
 
-#th123, #yazan{
-  margin-right: 16%;
-  margin-left: 0%;
-  margin: 2% 17% 0 17%;
+#th123, #yzn{
+    margin: 2% 16% 0 10%;
 }
+
+
+
+div img:hover  {
+  box-shadow: 0 0 50px 1px rgba(0, 140, 186, 0.5);
+  transform: scaleX(-1);
+  width: 400px;
+height: 400px;
+
+}
+
+  /* img:hover #dana {
+  visibility: visible;
+  */
+
+/* } */
+
+#thaer, #ghafri , #yazan,  #dana {
+  display: none;
+  /* display: block; */
+ /* visibility: hidden; */
+ position: absolute;
+ border: 10px solid rgba(67, 109, 4, 0.808);
+ height: 194px;
+ width: 316px;
+ line-height: 30px;
+ /* margin-left: -177px; */
+ left: -189px;
+ right: 0;
+ top: 232px;
+ bottom: -4px;
+ background-color: #f2f2f2;
+ color:  rgba(67, 109, 4, 0.808);
+ font-size: 20px;
+ 
+
+}
+
+#GName{
+  position: absolute;
+    top: 48%;
+    right: 59%;
+    font-size: 30px;
+    color:  rgba(67, 109, 4, 0.808);
+    font-weight: 900;
+
+}
+
+#dana p, #yazan p, #thaer p, #ghafri p{
+  margin-left: 10px;
+  margin-top: 3px;
+
+}
+/* a:link {
+  text-decoration: none;
+} */
+
+#thaerImg:hover  {
+  box-shadow: 0 0 50px 1px rgba(0, 140, 186, 0.5);
+  transform: scaleX(-1);
+  width: 400px;
+height: 400px;
+/* text-decoration:none; */
+
+
+}
+
+
+#thaerImg:hover + #thaer {
+  display: block;
+}​
+
+#ghafriImg:hover  {
+  box-shadow: 0 0 50px 1px rgba(0, 140, 186, 0.5);
+  transform: scaleX(-1);
+  width: 400px;
+height: 400px;
+
+}
+
+#ghafriImg:hover + #ghafri {
+  display: block;
+}​
+#yazanImg:hover  {
+  box-shadow: 0 0 50px 1px rgba(0, 140, 186, 0.5);
+  transform: scaleX(-1);
+  width: 400px;
+height: 400px;
+
+}
+#yazanImg:hover + #yazan {
+  display: block;
+}​
+
+#danaImg:hover  {
+  box-shadow: 0 0 50px 1px rgba(0, 140, 186, 0.5);
+  transform: scaleX(-1);
+  width: 400px;
+height: 400px;
+
+}
+
+
+#danaImg:hover + #dana {
+  display: block;
+}​
+
+a{
+  text-decoration: none;
+}
+
+/******************************************************/
+
+
+
+
   /* TA`S 
   *************************************************************************/
  
