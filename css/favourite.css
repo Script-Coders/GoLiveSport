@@ -19,21 +19,23 @@
 }
 
 #showImage section p {
-    /* display: inline; */
+    text-align: left;
+    text-indent: 30px;
+    word-spacing: 4px;
     position: absolute;
     font-weight: 600;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
     padding: 20px;
     padding-top: 25px;
     margin: 20px;
     margin-left: 500px;
     height: 300px;
     width: auto;
-    background-color: oldlace;
+    background-color: white;
     font-optical-sizing: 1;
-    opacity: 0.7;
-    top: 30px;
+    /* opacity: 0.7; */
+    top: 40px;
     border-radius: 50px;
     overflow: auto;
 }
@@ -42,7 +44,7 @@
     position: relative;
     height: 400px;
     width: 100%;
-    background-color: gray;
+    background-color: #f2f2f2;
 }
 
 #showImage section h2 {
@@ -58,5 +60,5 @@
 
 .animation:hover {
     transform: rotatey(20deg);
-    box-shadow: 15px 0px 15px #e15f4190;
+    box-shadow: -15px 0px 15px #9bf316ce;
 }
