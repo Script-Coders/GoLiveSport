@@ -10,7 +10,7 @@
 
   .container {
     position: relative;
-    width: 50%;
+    width: 100%;
     margin: 0 0 0 17%;
 
   }
@@ -61,8 +61,16 @@
     -ms-transform: translate(-10%, -10%);
   }
   
+  .us{
+    margin: 1% 0 3% 0;
+    /* border: groove; */
+  }
 
-
+#th123, #yazan{
+  margin-right: 16%;
+  margin-left: 0%;
+  margin: 2% 17% 0 17%;
+}
   /* TA`S 
   *************************************************************************/
  
