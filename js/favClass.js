@@ -4,16 +4,19 @@
 // Here, the selected images(favourite images) will be rendered in fav.html 
 
 // Step 1: Define global variables
-var aikido = `Aikido derives mainly from the martial art of Daitō-ryū Aiki-jūjutsu, but began to diverge from it in the late 1920s, partly due to Ueshiba's involvement with the Ōmoto-kyō religion. Ueshiba's early students' documents bear the term aiki-jūjutsu.`;
+var aikido = `Aikido :
+derives mainly from the martial art of Daitō-ryū Aiki-jūjutsu, but began to diverge from it in the late 1920s, partly due to Ueshiba's involvement with the Ōmoto-kyō religion. Ueshiba's early students' documents bear the term aiki-jūjutsu.`;
 var bodybulding = `Bodybuilding is the use of progressive resistance exercise to control and develop one's musculature for aesthetic purposes. An individual who engages in this activity is referred to as a bodybuilder. In competitive bodybuilding, bodybuilders appear in lineups and perform specified poses (and later individual posing routines) for a panel of judges who rank the competitors based on criteria such as symmetry, muscularity, size, conditioning, posing, and stage presentation. Bodybuilders prepare for competitions through the elimination of nonessential body fat, enhanced at the last stage by a combination of extracellular dehydration and carbohydrate loading, to achieve maximum muscular definition and vascularity, as well as tanning and shaving to accentuate the contrast of the skin under the spotlights. Some bodybuilders use anabolic steroids and other performance-enhancing drugs to build muscles and recover from injuries more quickly however, competitions sometimes ban using them because of the health risks or considerations regarding fair competition. Despite some calls for testing for steroids, the leading bodybuilding federation (National Physique Committee) does not.`;
-var boxing = `boxing`;
-var hipsandabs = `hipsandabs`;
+var boxing = `Boxing is a combat sport in which two people, usually wearing protective gloves, throw punches at each other for a predetermined amount of time in a boxing ring.
+Amateur boxing is both an Olympic and Commonwealth Games sport and is a standard fixture in most international games—it also has its own World Championships. Boxing is overseen by a referee over a series of one- to three-minute intervals called rounds.`;
+var hipsandabs = `Have you ever seen someone with really defined hips?  Strong hips are the key to improving your speed and efficiency in swimming, biking, running—and everything in between.`;
 var MuayThai = `Formal muay Thai techniques are divided into two groups: mae mai, or 'major techniques', and luk mai, or 'minor techniques'. Muay Thai is often a fighting art of attrition, where opponents exchange blows with one another. This is certainly the case with traditional stylists in Thailand, but is a less popular form of fighting in the contemporary world fighting circuit where the Thai style of exchanging blow for blow is no longer favorable. Almost all techniques in muay Thai use the entire body movement, rotating the hip with each kick, punch, elbow and block.`;
-var yoga = `yoga`;
-var zumba = `zumba`;
+var yoga = `Yoga is a mind and body practice with a 5,000-year history in ancient Indian philosophy. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation.`;
+var zumba = `Grooving to the beats of salsa, flamenco, and merengue music feels more like a dance party than a workout, which is exactly what makes Zumba so popular. The Latin-inspired dance workout is one of the most popular group exercise classes in the world.`;
 
+//p tage read from contentToDisplay 
 var contentToDisplay = ``;
-// var indexForContent;
+
 
 //array for all content
 var allContent = [aikido, bodybulding, boxing, hipsandabs, MuayThai, yoga, zumba];
@@ -65,6 +68,9 @@ function renderResults() {
     showImage.appendChild(section);
 
 
+    var h2 = document.createElement('h2');
+    section.appendChild(h2);
+    h2.textContent = add.name + ' :';
 
     img1 = document.createElement('img');
 
@@ -73,6 +79,8 @@ function renderResults() {
     img1.setAttribute('src', add.path);
     img1.setAttribute('alt', add.name);
     img1.setAttribute('title', add.name);
+    img1.setAttribute('class', 'animation');
+
 
     pContent(add.name);
 
@@ -97,6 +105,7 @@ window.addEventListener("storage", function() {
     }
 }, false);
 
+// to choose wich content should appear
 
 function pContent(name) {
 

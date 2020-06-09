@@ -1,135 +1,88 @@
-/* input {
-    width: 10%;
-  }
 
 
-
-  input[type=text] {
-    border: none;
-    border-bottom: 2px solid red;
-    background-color: #d0dd2027;
-    color: rgba(67, 109, 4, 0.808);
-    padding: 8px 15px;
-    font-size: medium;
-   
-    transition: width 0.4s ease-in-out;
-    
-  }
-  input[type=text]:focus {
-    width: 100%;
-  }
-
-  #result{
-    border: none;
-    border-bottom: 2px solid red;
-    width: 100%;
-    background-color: #d0dd2027;
-    color: rgba(67, 109, 4, 0.808);
-    font-size: medium;
-    
-  }
-
-  #formF{
-    background-color: #d0dd2027;
-
-  }
- #mySelect {
-    width: 100%;
-    padding: 12px 16px;
-    border:red solid 2px;
-    border-radius: 20px;
- 
-    
-  }
-
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    
-  }
-  
-  input[type=submit]:hover {
-    background-color: #09f715;
-  }
-  input[type=Reset]{
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
+  .lab{
+    display:block;
+    /* letter-spacing: 4px; */
+    /* padding-top: 5px; */
+     text-align: center; 
+     /* padding: 0 20% 0 0;ch */
+    color: #0a0a0aee;
+    padding: 6px 308px 4px 61px;
+    /* margin: 15px 550px; */
    
   }
-  input[type=Reset]:hover {
-    background-color: #09f715;
-  } */
-
-  label {
-    display: block;
-    letter-spacing: 4px;
-    padding-top: 5px;
-    /* text-align: center; */
-    /* padding: 0 20% 0 0; */
-    color: #fffb07ee;
+  #firstName{
+    padding: 6px 347px 4px 61px;
+  }
+  /* calculate your bmi label */
+  #lable1{
+    display:block;
+    /* letter-spacing: 4px; */
+    
+     text-align: center; 
+     
+    color: #000000ee;
+    padding: 2px 323px 0px 78px;
+    
   }
 
   #submit {
-    background: transparent;
-    color: #fffb07ee;
-    border: 2px solid #F0F0F0;
+  
+    /* background: transparent; */
+    color: white;
+    border: 2px solid rgb(34, 219, 10);
     font-size: 15px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     padding: 20px 75px;
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    /* margin: 15px 550px; */
+     margin: 15px 550px;/*ch */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
+   background-color: green;
+   
 
   }
   #submit:hover, button:focus {
-    background-color: white;
-    color: #333333;
+    background-color: rgb(35, 223, 35);
+    color: white;
   }
 
   #reset {
     background: transparent;
-    color: #fffb07ee;
+    color: white;
     border: 2px solid #F0F0F0;
     font-size: 15px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     padding: 20px 75px;
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    /* margin: 15px 550px; */
+     margin: 15px 550px;/*ch */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
+   background-color: green;
 
   }
   #reset:hover, button:focus {
-    background-color: white;
-    color: #333333;
+    background-color: rgb(35, 223, 35);
+    color: white;
   }
 
   input[type=text] {
-    background: transparent;
+    /* background: transparent; */
     color:rgb(255, 255, 255);
     /* color: #fffb07ee; */
     border: 2px solid #F0F0F0;
     font-size: 15px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     padding: 10px 50px;
     text-transform: uppercase;
     display: inline-block;
-    /* margin: 0px 550px; */
+     margin: 0px 550px;/*ch */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
@@ -138,49 +91,51 @@
   }
 /* to change the color of placeholder inside input text  */
   ::placeholder { 
-    color: white;
+    color: grey;
     opacity: 1; 
   }
 #result{
-    background: transparent;
-    color:#fffb07ee;
+    /* background: transparent; */
+    color:grey;
     border: 2px solid #F0F0F0;
     font-size: 14px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     padding: 10px 50px;
     text-transform: uppercase;
     display: inline-block;
-    /* margin: 0px 550px; */
+     margin: 0px 550px;/*ch */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
 
 }
 #formF{
-    /* background-color: black; */
+    background-color: #f2f2f286;
     display: inline-block;
-    color: #fffb07ee;
+    color: #0a0a0aee;
    /* opacity: .2; */
     
   }
       #form1{
        /* background-color: black; */
-       /* opacity: .8; */
+       /* opacity: .3; */
        display: inline-block;
-    width: 0;
+    /* width: 0; */
+    
 
       }
+      
 
 #mySelect {
-    background: transparent;
-    color:#fffb07ee;
+    /* background: transparent; */
+    /* color:#fffb07ee; */
     border: 2px solid #F0F0F0;
     font-size: 14px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     padding: 10px 50px;
     text-transform: uppercase;
     display: inline-block;
-    /* margin: 0px 550px; */
+    margin: 0px 550px;/*ch */
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
@@ -190,18 +145,48 @@
 
 
   body{
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     /* background-image: url('../img/form-background2.jpg'); */
     /* background-image: url('../img/background3.jpg'); */
-    background-image: url('../form background test/b1.jpg');
+    /* background-image: url('../form background test/b1.jpg'); */
     /* background-image: url('../form background test/b2.jpg'); */
     /* background-image: url('../form background test/b3.jpg'); */
     /* background-image: url('../form background test/b4.jpg'); */
     background-repeat: no-repeat;
     
     background-size:100% 100% ;
-    color: #fffb07ee;
+    /* color: #fffb07ee; */
  
    
   }
+
+  #main {
+    /* background-image: url('../form background test/b1.jpg'); */
+    background-repeat: no-repeat;
+  background-size:cover;
+  /* background-position: right; */
+  /* background-position-x: right; */
+ 
+
+  }
    
+  #paraghForBooking{
+    margin: 0px 0 0 553px;
+  }
+
+  #paraghForBooking label{
+    display: block;
+    letter-spacing: 4px;
+    /* padding-top: 38px; */
+    /* text-align: center; */
+    /* color: #fffb07ee; */
+    padding: 6px 217px 4px 61px;
+    margin: -26px 9px 7px -16px; 
+    /* /* margin: 15px 550px; */
+  }
+  #imgBac{
+
+    width: 100%;
+    height: 400px;
+  }
+ 
