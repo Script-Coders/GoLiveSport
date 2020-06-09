@@ -7,7 +7,7 @@ var indexCase = ['Underweight', 'Normal', 'Overweight', 'Obese'];
 aclass1 = ['Yoga'];
 aclass2 = ['Yoga', 'Boxing'];
 aclass3 = ['Body Builing', 'Running', 'Aikido'];
-aclass4 = ['Body Builing', 'Running', 'Aikido', 'Cardio']
+aclass4 = ['Body Building', 'Running', 'Aikido', 'Cardio']
 var aclass1, aclass2, aclass3, aclass4;
 var classType = [aclass1, aclass2, aclass3, aclass4];
 var select;// this for SELECT in form. Used to initiate the SELECT element to aviod the doublecation
@@ -204,71 +204,47 @@ function createRadio() {
     document.getElementById('paraghForBooking').remove();
   }
   p1 = document.createElement('p');
-  p1.setAttribute('id', 'paraghForBooking');
-  p1.textContent = `Book the training days`;
-  br2 = document.createElement('br');
-  br2.setAttribute('id', 'br2');
+  p1.setAttribute('id', 'paraghForBooking');  p1.textContent = `Book the training days`;
+  br2 = document.createElement('br');  br2.setAttribute('id', 'br2');
   p1.appendChild(br2);
 
 
   input1 = document.createElement('input');
-  input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'sunday');
-  input1.setAttribute('id', 'day1')
-  lable2 = document.createElement('label');
-  lable2.setAttribute('for', 'day1');
-  lable2.textContent = "Sunday";
+  input1.setAttribute('type', 'checkbox');  input1.setAttribute('value', 'sunday');  input1.setAttribute('id', 'day1')
+  lable2 = document.createElement('label');  lable2.setAttribute('for', 'day1');  lable2.textContent = "Sunday";
   p1.appendChild(input1);
   p1.appendChild(lable2);
 
 
   input1 = document.createElement('input');
-  input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'monday');
-  input1.setAttribute('id', 'day2')
-  lable2 = document.createElement('label');
-  lable2.setAttribute('for', 'day2');
-  lable2.textContent = "Monday";
+  input1.setAttribute('type', 'checkbox');  input1.setAttribute('value', 'monday');  input1.setAttribute('id', 'day2')
+  lable2 = document.createElement('label');  lable2.setAttribute('for', 'day2');  lable2.textContent = "Monday";
   p1.appendChild(input1);
   p1.appendChild(lable2);
 
 
   input1 = document.createElement('input');
-  input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'tuesday');
-  input1.setAttribute('id', 'day3')
-  lable2 = document.createElement('label');
-  lable2.setAttribute('for', 'day3');
-  lable2.textContent = "Tuesday";
+  input1.setAttribute('type', 'checkbox');  input1.setAttribute('value', 'tuesday');  input1.setAttribute('id', 'day3')
+  lable2 = document.createElement('label');  lable2.setAttribute('for', 'day3');  lable2.textContent = "Tuesday";
   p1.appendChild(input1);
   p1.appendChild(lable2);
 
 
   input1 = document.createElement('input');
-  input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'wednesday');
-  input1.setAttribute('id', 'day4')
-  lable2 = document.createElement('label');
-  lable2.setAttribute('for', 'day4');
-  lable2.textContent = "Wednesday";
+  input1.setAttribute('type', 'checkbox');  input1.setAttribute('value', 'wednesday');  input1.setAttribute('id', 'day4')
+  lable2 = document.createElement('label');  lable2.setAttribute('for', 'day4');  lable2.textContent = "Wednesday";
   p1.appendChild(input1);
   p1.appendChild(lable2);
 
 
   input1 = document.createElement('input');
-  input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'thursday');
-  input1.setAttribute('id', 'day5');
-  lable2 = document.createElement('label');
-  lable2.setAttribute('for', 'day5');
-  lable2.textContent = "Thursday";
+  input1.setAttribute('type', 'checkbox');  input1.setAttribute('value', 'thursday');  input1.setAttribute('id', 'day5');
+  lable2 = document.createElement('label');  lable2.setAttribute('for', 'day5');  lable2.textContent = "Thursday";
   p1.appendChild(input1);
   p1.appendChild(lable2);
 
   botton1 = document.createElement('input');
-  botton1.setAttribute('type', 'submit');
-  botton1.setAttribute('value', 'Book Now');
-  botton1.setAttribute('id', 'booking');
+  botton1.setAttribute('type', 'submit');  botton1.setAttribute('value', 'Book Now');  botton1.setAttribute('id', 'booking');
   // botton1.setAttribute('onclick',)
   p1.appendChild(botton1);
 
@@ -319,15 +295,20 @@ var article1;
 function bookingResult(){
   article1=document.createElement('div');
   document.getElementById('main').appendChild(article1);
+  var a3=document.getElementById("mySelect").selectedIndex;// To target the selected option for class.
+  var a4=document.getElementsByTagName("option")[a3].value;// value of targeted class.
   var p2=document.createElement('p');
-  p2.textContent=`Your Booking at :`;
+  p2.textContent=`Your class will be ${a4} at :`;
   article1.appendChild(p2);
+  
 for(var i=0;i<savedDays.length;i++){
   var li1=document.createElement('li');
   li1.textContent=savedDays[i];
   article1.appendChild(li1);
 
 }
+
+// console.log();
 
 
 }
