@@ -79,6 +79,7 @@ function renderResults() {
     img1.setAttribute('src', add.path);
     img1.setAttribute('alt', add.name);
     img1.setAttribute('title', add.name);
+    img1.setAttribute('class', 'animation');
 
 
     pContent(add.name);
