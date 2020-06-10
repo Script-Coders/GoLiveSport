@@ -18,7 +18,7 @@ breifClass.addEventListener('click', function (event) {
 
 }
 getStoredId(); // assigned ID value to b which is declared in line
-var nameOfSport = ['aikido', 'bodybuilding', 'Boxing', 'hipsandabs', 'MuayThai', 'yoga', 'zumba'];
+var nameOfSport = ['aikido', 'bodybuilding', 'boxing', 'hipsandabs', 'MuayThai', 'yoga', 'zumba'];
 function Obj(path, title, content) {
     this.path = path;
     this.title = title;
