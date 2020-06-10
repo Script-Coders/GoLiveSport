@@ -2,7 +2,8 @@
   .container {
     position: relative;
     width: 100%;
-    margin: 0 0 0 15%;
+    margin: 0 0 0 0;
+    text-align: center;
 
   }
   
@@ -87,7 +88,7 @@ height: 400px;
  width: 316px;
  line-height: 30px;
  /* margin-left: -177px; */
- left: -189px;
+ left: 46px;
  right: 0;
  top: 232px;
  bottom: -4px;
@@ -101,7 +102,7 @@ height: 400px;
 #GName{
   position: absolute;
     top: 48%;
-    right: 59%;
+    right: 41%;
     font-size: 30px;
     color:  rgba(67, 109, 4, 0.808);
     font-weight: 900;

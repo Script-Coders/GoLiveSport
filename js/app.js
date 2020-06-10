@@ -29,15 +29,19 @@ for (var i = 0; i < names.length; i++) {
 //      and will also check if the user wants to add or delete the image from the his favourites (step 5)
 function set(imgId) {
 
+    // var heart= document.getElementById('black');
+    // heart.textContent= '💚';
+var black= 'black'+imgId;
     newSelectFav = Sport.all[imgId];
     console.log('before store',selectedFavourite);
-
+if(selectedFavourite){
     if (!selectedFavourite.includes(newSelectFav)) { // if the new object is not reapeted addd it to the array to display it
         selectedFavourite.push(newSelectFav);
         console.log('before store',selectedFavourite);
         storeFav1();
         console.log('after store',selectedFavourite);
-
+        var heart= document.getElementById (black);
+        heart.textContent= '⭐';
     }
     else {
         //remove from selectedFavourite 
@@ -46,10 +50,12 @@ function set(imgId) {
                 index = j;
             }
         }
-        selectedFavourite.splice(index);
+        selectedFavourite.splice(index,1);
         console.log(selectedFavourite);
         deleteFromLocalStorage(newSelectFav.name);
-    }
+        var heart= document.getElementById(black);
+        heart.textContent= '✩';
+    }}
 }
 
 // 3.2: Storing favourite classes to the local storage
@@ -125,6 +131,5 @@ function deleteFromLocalStorage(itemName) { // to delete a reapeted element
 //   slides[slideIndex-1].style.display = "block";  
 //   dots[slideIndex-1].className += " active";
 // }
-
 
 

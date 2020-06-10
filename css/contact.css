@@ -1,4 +1,15 @@
+#contform{
+/* border: groove;
+  border-color: rgba(67, 109, 4, 0.808); */
+width: 66%;
+margin: 0 0px 0 146px;
 
+}
+
+.rowNew{
+  margin: 0;
+
+}
 
 /* Style inputs */
 input[type=text], select, textarea {
