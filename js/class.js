@@ -97,6 +97,7 @@ var container = document.getElementById('breifForClass');
 
 if (container) {
     console.log(index);
+    console.log(Obj.all[index].path);
     var imgRender = document.createElement('img');
     container.appendChild(imgRender);
     imgRender.setAttribute('src', `${Obj.all[index].path}`);
