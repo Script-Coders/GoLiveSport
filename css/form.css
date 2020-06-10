@@ -98,13 +98,13 @@ color: white;
 
 input[type=text] {
   /* background: transparent; */
-  color:rgb(255, 255, 255);
+  color:black;
   /* color: #fffb07ee; */
   border: 2px solid #F0F0F0;
   font-size: 15px;
   /* letter-spacing: 2px; */
   padding: 10px 50px;
-  text-transform: uppercase;
+  text-transform:capitalize;
   display: inline-block;
    margin: 0px 550px;/*ch */
   -webkit-transition: all 0.4s;
