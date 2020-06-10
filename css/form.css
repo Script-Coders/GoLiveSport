@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+    /*  font-family: 'Playfair Display', serif;  */
+    /* font-family: serif;  */
+    /* Font for H1,h2,h3: 'Playfair Display', size: 70px
+    for p : serif, size 22px , line-height: 30px
+    Color palatte  rgba(67, 109, 4, 0.808)/ #f2f2f2; / white */
 .lab{
   display:block;
   /* letter-spacing: 4px; */
@@ -134,7 +140,7 @@ input[type=text] {
 }
 #formF{
   background-color: #f2f2f286;
-  display: inline-block;
+  display: block;
   color: #0a0a0aee;
  /* opacity: .2; */
   
@@ -215,3 +221,41 @@ background-size:cover;
   width: 100%;
   height: 400px;
 }
+
+#articleId{
+position: absolute;
+top: 24%;
+left: 61%;
+/* background-image: url(../img/note2_pic.jpg); */
+width: 577px;
+    min-height: 200px;
+    background-color: #ffffff;
+ border: 3px solid green;
+    border-radius: 5px;
+    padding: 1% 0 0 2%;
+}
+#articleId p{
+line-height: 30px;
+    font-size: 22px;
+    font-family: serif;
+    text-shadow: 1px 1px 3px #69FF33;
+  }
+
+      #articleId p::first-letter {
+        font-size: 200%;
+        color: green;
+      }
+  #articleId li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: serif;
+    padding-right: 1%;
+    /* background-color: red; */
+    border: 2px solid #f3f3f3;
+    
+  }
+  #articleId li::first-letter{
+  font-size: 200%;
+  color: rgb(18, 110, 18);
+  }

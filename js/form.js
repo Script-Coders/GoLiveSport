@@ -43,6 +43,9 @@ function getArray(i) {
 
 //calculate the bmi
 function bmi() {
+  if(document.getElementById('articleId')){
+    document.getElementById('articleId').remove();
+  }
   if(localStorage){
     localStorage.clear();
     console.log("LocaStorage been cleared")
@@ -91,7 +94,9 @@ function bmi() {
   var formOrigin = document.getElementById('form1');
 
 enteredName=document.getElementById('fname').value;
-  resetForm(); //To reset the Form
+
+console.log(enteredName);
+  // resetForm(); //To reset the Form
   console.log(document.getElementById('form1'));
 }
 
@@ -99,7 +104,7 @@ enteredName=document.getElementById('fname').value;
 function resetForm() {
   console.log(document.getElementById("form1"));
 
-  // document.getElementById("form1").reset(); // we can use this instrction instead of separated for each tag in the form instructions
+  document.getElementById("form1").reset(); // we can use this instrction instead of separated for each tag in the form instructions
 
   // console.log("reset");
   // document.getElementById("fname").value = "";
@@ -186,7 +191,7 @@ function creatTextArea() {
 var p1, input1, lable2, br2, botton1;
 // var aaaa="12346468";
 function createRadio() {
-  if (p1) {
+  if (document.getElementById('paraghForBooking')) {
     document.getElementById('paraghForBooking').remove();
   }
   p1 = document.createElement('p');
@@ -198,7 +203,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'sunday');
+  input1.setAttribute('value', 'Sunday');
   input1.setAttribute('id', 'day1')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day1');
@@ -208,7 +213,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'monday');
+  input1.setAttribute('value', 'Monday');
   input1.setAttribute('id', 'day2')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day2');
@@ -218,7 +223,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'tuesday');
+  input1.setAttribute('value', 'Tuesday');
   input1.setAttribute('id', 'day3')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day3');
@@ -228,7 +233,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'wednesday');
+  input1.setAttribute('value', 'Wednesday');
   input1.setAttribute('id', 'day4')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day4');
@@ -238,7 +243,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'thursday');
+  input1.setAttribute('value', 'Thursday');
   input1.setAttribute('id', 'day5');
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day5');
@@ -267,6 +272,7 @@ function createRadio() {
 
 function doBooking() {
   event.preventDefault();
+  
   for (var i = 1; i <= 5; i++) {
     if (document.getElementById(`day${i}`).checked) {
       checkedArray.push(document.getElementById(`day${i}`).value);
@@ -279,7 +285,7 @@ function doBooking() {
     // console.log(savedDays);
     document.getElementById('paraghForBooking').remove();
     bookingResult();
-
+    resetForm();
 }
 var checkedArray = [];// For booking days that user want in local storage;
 function storeDays(a){
