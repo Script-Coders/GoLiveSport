@@ -1,192 +1,217 @@
-
-
-  .lab{
-    display:block;
-    /* letter-spacing: 4px; */
-    /* padding-top: 5px; */
-     text-align: center; 
-     /* padding: 0 20% 0 0;ch */
-    color: #0a0a0aee;
-    padding: 6px 308px 4px 61px;
-    /* margin: 15px 550px; */
-   
-  }
-  #firstName{
-    padding: 6px 347px 4px 61px;
-  }
-  /* calculate your bmi label */
-  #lable1{
-    display:block;
-    /* letter-spacing: 4px; */
-    
-     text-align: center; 
-     
-    color: #000000ee;
-    padding: 2px 323px 0px 78px;
-    
-  }
-
-  #submit {
+.lab{
+  display:block;
+  /* letter-spacing: 4px; */
+  /* padding-top: 5px; */
+   text-align: center; 
+   /* padding: 0 20% 0 0;ch */
+  color: #0a0a0aee;
+  padding: 6px 308px 4px 61px;
+  /* margin: 15px 550px; */
+ 
+}
+#firstName{
+  padding: 6px 347px 4px 61px;
+}
+/* calculate your bmi label */
+#lable1{
+  display:block;
+  /* letter-spacing: 4px; */
   
-    /* background: transparent; */
-    color: white;
-    border: 2px solid rgb(34, 219, 10);
-    font-size: 15px;
-    /* letter-spacing: 2px; */
-    padding: 20px 75px;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-     margin: 15px 550px;/*ch */
-    -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
-   background-color: green;
+   text-align: center; 
    
+  color: #000000ee;
+  padding: 2px 323px 0px 78px;
+  
+}
 
-  }
-  #submit:hover, button:focus {
-    background-color: rgb(35, 223, 35);
-    color: white;
-  }
+.container{
+  perspective:320px ;
+}
 
-  #reset {
-    background: transparent;
-    color: white;
-    border: 2px solid #F0F0F0;
-    font-size: 15px;
-    /* letter-spacing: 2px; */
-    padding: 20px 75px;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-     margin: 15px 550px;/*ch */
-    -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
-   background-color: green;
+#submit,#reset {
 
-  }
-  #reset:hover, button:focus {
-    background-color: rgb(35, 223, 35);
-    color: white;
-  }
+  /* background: transparent; */
+  color: white;
+  border: 2px solid rgb(34, 219, 10);
+  font-size: 15px;
+  /* letter-spacing: 2px; */
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+   margin: 15px 550px;/*ch */
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
+ background-color: green;
+ width: 317px;
+ height: 60px;
+}
 
-  input[type=text] {
-    /* background: transparent; */
-    color:rgb(255, 255, 255);
-    /* color: #fffb07ee; */
-    border: 2px solid #F0F0F0;
-    font-size: 15px;
-    /* letter-spacing: 2px; */
-    padding: 10px 50px;
-    text-transform: uppercase;
-    display: inline-block;
-     margin: 0px 550px;/*ch */
-    -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
+#booking{
+  background: transparent;
+  color: white;
+  border: 2px solid rgb(34, 219, 10);
+  font-size: 15px;
+  /* letter-spacing: 2px; */
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+   margin: 15px 0px;/*ch */
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
+ background-color: green;
+ width: 317px;
+ height: 60px;
+}
+
+#submit:hover, button:focus {
+  background-color: rgb(35, 223, 35);
+  color: white;
+}
+.b1:hover{
+  transform: rotateY(15deg);
+  box-shadow:-15px 0px 15px green;
+
+}
+.b2:hover{
+  transform: rotateY(-15deg);
+  box-shadow:15px 0px 15px green;
+}
+#booking:hover{
+  transform: rotateX(15deg);
+  box-shadow:0px 15px  15px green;
+}
+
+#reset:hover, button:focus {
+  background-color: rgb(35, 223, 35);
+  color: white;
+}
+#booking:hover, button:focus {
+background-color: rgb(35, 223, 35);
+color: white;
+}
 
 
-  }
+
+input[type=text] {
+  /* background: transparent; */
+  color:rgb(255, 255, 255);
+  /* color: #fffb07ee; */
+  border: 2px solid #F0F0F0;
+  font-size: 15px;
+  /* letter-spacing: 2px; */
+  padding: 10px 50px;
+  text-transform: uppercase;
+  display: inline-block;
+   margin: 0px 550px;/*ch */
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
+
+}
 /* to change the color of placeholder inside input text  */
-  ::placeholder { 
-    color: grey;
-    opacity: 1; 
-  }
+::placeholder { 
+  color: grey;
+  opacity: 1; 
+}
 #result{
-    /* background: transparent; */
-    color:grey;
-    border: 2px solid #F0F0F0;
-    font-size: 14px;
-    /* letter-spacing: 1px; */
-    padding: 10px 50px;
-    text-transform: uppercase;
-    display: inline-block;
-     margin: 0px 550px;/*ch */
-    -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
+  /* background: transparent; */
+  color:grey;
+  border: 2px solid #F0F0F0;
+  font-size: 14px;
+  /* letter-spacing: 1px; */
+  padding: 10px 50px;
+  text-transform: uppercase;
+  display: inline-block;
+   margin: 0px 550px;/*ch */
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
 
 }
 #formF{
-    background-color: #f2f2f286;
-    display: inline-block;
-    color: #0a0a0aee;
-   /* opacity: .2; */
-    
-  }
-      #form1{
-       /* background-color: black; */
-       /* opacity: .3; */
-       display: inline-block;
-    /* width: 0; */
-    
+  background-color: #f2f2f286;
+  display: inline-block;
+  color: #0a0a0aee;
+ /* opacity: .2; */
+  
+}
+    #form1{
+     /* background-color: black; */
+     /* opacity: .3; */
+     display: inline-block;
+  /* width: 0; */
+  
 
-      }
-      
+    }
+    
 
 #mySelect {
-    /* background: transparent; */
-    /* color:#fffb07ee; */
-    border: 2px solid #F0F0F0;
-    font-size: 14px;
-    /* letter-spacing: 1px; */
-    padding: 10px 50px;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 0px 550px;/*ch */
-    -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
+  /* background: transparent; */
+  /* color:#fffb07ee; */
+  border: 2px solid #F0F0F0;
+  font-size: 14px;
+  /* letter-spacing: 1px; */
+  padding: 10px 50px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0px 550px;/*ch */
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
+
+  
+}
+
+body{
+  /* font-family: sans-serif; */
+  /* background-image: url('../img/form-background2.jpg'); */
+  /* background-image: url('../img/background3.jpg'); */
+  /* background-image: url('../form background test/b1.jpg'); */
+  /* background-image: url('../form background test/b2.jpg'); */
+  /* background-image: url('../form background test/b3.jpg'); */
+  /* background-image: url('../form background test/b4.jpg'); */
+  background-repeat: no-repeat;
+  
+  background-size:100% 100% ;
+  /* color: #fffb07ee; */
+
  
-    
-  }
+}
+
+#main {
+  /* background-image: url('../form background test/b1.jpg'); */
+  background-repeat: no-repeat;
+background-size:cover;
+/* background-position: right; */
+/* background-position-x: right; */
 
 
-  body{
-    /* font-family: sans-serif; */
-    /* background-image: url('../img/form-background2.jpg'); */
-    /* background-image: url('../img/background3.jpg'); */
-    /* background-image: url('../form background test/b1.jpg'); */
-    /* background-image: url('../form background test/b2.jpg'); */
-    /* background-image: url('../form background test/b3.jpg'); */
-    /* background-image: url('../form background test/b4.jpg'); */
-    background-repeat: no-repeat;
-    
-    background-size:100% 100% ;
-    /* color: #fffb07ee; */
+}
+
+#daysDev{
+
+}
  
-   
-  }
+#paraghForBooking{
+  margin: 0px 0 0 553px;
+}
 
-  #main {
-    /* background-image: url('../form background test/b1.jpg'); */
-    background-repeat: no-repeat;
-  background-size:cover;
-  /* background-position: right; */
-  /* background-position-x: right; */
- 
+#paraghForBooking label{
+  display: block;
+  /* letter-spacing: 4px; */
+  /* padding-top: 38px; */
+  /* text-align: center; */
+  /* color: #fffb07ee; */
+  padding: 6px 217px 4px 61px;
+  margin: -26px 9px 7px -16px; 
+  /* /* margin: 15px 550px; */
+}
+#imgBac{
 
-  }
-   
-  #paraghForBooking{
-    margin: 0px 0 0 553px;
-  }
-
-  #paraghForBooking label{
-    display: block;
-    letter-spacing: 4px;
-    /* padding-top: 38px; */
-    /* text-align: center; */
-    /* color: #fffb07ee; */
-    padding: 6px 217px 4px 61px;
-    margin: -26px 9px 7px -16px; 
-    /* /* margin: 15px 550px; */
-  }
-  #imgBac{
-
-    width: 100%;
-    height: 400px;
-  }
- 
+  width: 100%;
+  height: 400px;
+}
