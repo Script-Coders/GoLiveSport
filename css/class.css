@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+    /*  font-family: 'Playfair Display', serif;  */
+    /* Font for H1,h2,h3: 'Playfair Display', size: 70px
+    for p : serif, size 22px , line-height: 30px
+    Color palatte  rgba(67, 109, 4, 0.808)/ #f2f2f2; / white */
 body{
     background-color: #EBE3A4;
 }
 h1{
-    margin: 4% 0 1% 46%;
+    margin: 4% 0 1% 41%;
+    font-family: 'Playfair Display';
+    font-size: 70px;
 }
 #breifForClass{
     /* width: 41%; */
@@ -20,6 +27,11 @@ h1{
     background-color: rgb(167, 182, 209);
     padding: 2%;
     border-radius: 5px;
+    line-height: 30px;
+    text-indent: 30px;
+    text-align: justify;
+    font-family:  serif; 
+    font-size: 22px;
     
 }
 
