@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Book your class</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/form.css">
   <!-- <link rel="stylesheet" href="css/form2.css"> -->
@@ -19,7 +17,7 @@
 <body>
   <header id="home">
     <div id="header-container">
-      <a href="index.html"> <img src="img/logo.png" alt="" id="logo"></a>
+      <img src="img/logo.png" alt="" id="logo">
       <h1 id="HeaderTitle">Go Live Sport</h1>
       <nav class="top">
         <ul id="headerList">
@@ -38,18 +36,16 @@
       <img src="../form background test/b1.jpg" alt="" id="imgBac">
     <fieldset id="formF">
       <legend>BOOKING</legend>
-
-
-
-      <label for="fname">First Name:</label>
-      <input type="text" id="fname" name="fname"  placeholder="Example..." required >
-      <label for="height">Enter your height:</label>
-
+      <label for="fname" class="lab" id="firstName">First Name:</label>
+      <input type="text" id="fname" name="fname" required placeholder="Example..." >
+      <label for="height" class="lab">Enter your height:</label>
       <input type="text" id="height" name="height" placeholder="In cm..." required>
       <label for="wieght" class="lab">Enter your wieght:</label>
       <input type="text" id="wieght" name="wieght" placeholder="In kg..." required>
-      <input type="submit" value="calculate your BMI" onclick="bmi()" id="submit">
-      <!-- <input type="reset" value="Reset the fieldset " onclick="resetForm()" id="resete"> -->
+      <div class="container">
+      <input type="submit" value="calculate your BMI" onclick="bmi()" id="submit" class="b1">
+      <input type="reset" value="Reset the fieldset " onclick="resetForm()" id="reset" class="b2">
+    </div>
       <!-- <label for="BMI">calculate your BMI:</label><br>
       <textarea name="message" rows="10" cols="50" id="result">
    your BMI and your suggstion for the class
@@ -58,7 +54,6 @@
       <!-- <select name="class fit you" id="id="mySelect">
 
       </select> -->
-
 
 
       <!-- <form action="http://www.example.com/profile.php"> -->
@@ -74,7 +69,6 @@
         <!-- </form> -->
 
 
-
         
       <!-- <input list="class">
 <datalist id="class">
@@ -86,19 +80,25 @@
 </datalist><br>
 <input type="submit" value="add to cart" onclick="addToCart()"> -->
 
+
+
+
+
     </fieldset>
   </form>
   
 </div>
  
   </main>
+
   <footer>
     <img src="img/logo.png" alt="" id="logo-footer">
     <h1 id="FooterTitle">Go Live Sport</h1>
-    <!-- <div id="contact-us">
+    <div id="contact-us">
       <a href="about-us.html"> About Us</a>
       <a href=" "> Contact Us</a>
-    </div> -->
+      <!--Extra if we have more time it will lead us to anthor page-->
+    </div>
 
     <div id='footerIcons'>
       <a href="#" class="fa fa-facebook"></a>
@@ -109,9 +109,8 @@
 
     </div>
 
-
   </footer>
-  <script src="js/form.js"></script>
+  <script src="js/form.js" ></script>
 </body>
 
 </html>
