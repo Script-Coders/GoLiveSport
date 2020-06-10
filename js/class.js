@@ -82,19 +82,22 @@ for (var i = 0; i < nameOfSport.length; i++) {
     Obj.all[i].pushFrame(i);
 }
 console.log(Obj.all);
-console.log(nameOfSport[i]);
+// console.log(nameOfSport[i]);
 var index;
+
 for (var i = 0; i < nameOfSport.length; i++) {
+    console.log(savedId);
     if (savedId == nameOfSport[i]) {
         index = i;
         console.log(index);
     }
 }
-console.log(Obj.all[0].path);
+// console.log(Obj.all[0].path);
 var container = document.getElementById('breifForClass');
 
 if (container) {
-    
+    console.log(index);
+    console.log(Obj.all[index].path);
     var imgRender = document.createElement('img');
     container.appendChild(imgRender);
     imgRender.setAttribute('src', `${Obj.all[index].path}`);

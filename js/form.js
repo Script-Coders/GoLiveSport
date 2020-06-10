@@ -11,7 +11,7 @@ var aclass1, aclass2, aclass3, aclass4;
 var classType = [aclass1, aclass2, aclass3, aclass4];
 var select;// this for SELECT in form. Used to initiate the SELECT element to aviod the doublecation
 var lable1, hr1, textArea1;// tags element in the form. Used to initiate the text area to aviod the doublecation 
-
+var enteredName;
 function Class(name, sport) {
   this.nameClass = name;
   this.sport = sport;
@@ -43,6 +43,9 @@ function getArray(i) {
 
 //calculate the bmi
 function bmi() {
+  if(document.getElementById('articleId')){
+    document.getElementById('articleId').remove();
+  }
   if(localStorage){
     localStorage.clear();
     console.log("LocaStorage been cleared")
@@ -90,8 +93,10 @@ function bmi() {
 
   var formOrigin = document.getElementById('form1');
 
+enteredName=document.getElementById('fname').value;
 
-  resetForm(); //To reset the Form
+console.log(enteredName);
+  // resetForm(); //To reset the Form
   console.log(document.getElementById('form1'));
 }
 
@@ -99,7 +104,7 @@ function bmi() {
 function resetForm() {
   console.log(document.getElementById("form1"));
 
-  // document.getElementById("form1").reset(); // we can use this instrction instead of separated for each tag in the form instructions
+  document.getElementById("form1").reset(); // we can use this instrction instead of separated for each tag in the form instructions
 
   // console.log("reset");
   // document.getElementById("fname").value = "";
@@ -186,7 +191,7 @@ function creatTextArea() {
 var p1, input1, lable2, br2, botton1;
 // var aaaa="12346468";
 function createRadio() {
-  if (p1) {
+  if (document.getElementById('paraghForBooking')) {
     document.getElementById('paraghForBooking').remove();
   }
   p1 = document.createElement('p');
@@ -198,7 +203,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'sunday');
+  input1.setAttribute('value', 'Sunday');
   input1.setAttribute('id', 'day1')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day1');
@@ -208,7 +213,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'monday');
+  input1.setAttribute('value', 'Monday');
   input1.setAttribute('id', 'day2')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day2');
@@ -218,7 +223,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'tuesday');
+  input1.setAttribute('value', 'Tuesday');
   input1.setAttribute('id', 'day3')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day3');
@@ -228,7 +233,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'wednesday');
+  input1.setAttribute('value', 'Wednesday');
   input1.setAttribute('id', 'day4')
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day4');
@@ -238,7 +243,7 @@ function createRadio() {
 
   input1 = document.createElement('input');
   input1.setAttribute('type', 'checkbox');
-  input1.setAttribute('value', 'thursday');
+  input1.setAttribute('value', 'Thursday');
   input1.setAttribute('id', 'day5');
   lable2 = document.createElement('label');
   lable2.setAttribute('for', 'day5');
@@ -267,6 +272,7 @@ function createRadio() {
 
 function doBooking() {
   event.preventDefault();
+  
   for (var i = 1; i <= 5; i++) {
     if (document.getElementById(`day${i}`).checked) {
       checkedArray.push(document.getElementById(`day${i}`).value);
@@ -279,7 +285,7 @@ function doBooking() {
     // console.log(savedDays);
     document.getElementById('paraghForBooking').remove();
     bookingResult();
-
+    resetForm();
 }
 var checkedArray = [];// For booking days that user want in local storage;
 function storeDays(a){
@@ -294,26 +300,24 @@ function restoreDays(){
 }
 var savedDays;// For booking days that user want **from** local storage;
 
-var article1,article2,sp;
+var article1;
 function bookingResult(){
-   article1=document.createElement('div');
-  article1.setAttribute('id','daysDev');
-  // document.getElementById('formF').appendChild(article1);
+  article1=document.createElement('div'); article1.setAttribute('id','articleId');
+  document.getElementById('main').appendChild(article1);
+  var a3=document.getElementById("mySelect").selectedIndex;// To target the selected option for class.
+  var a4=document.getElementsByTagName("option")[a3].value;// value of targeted class.
   var p2=document.createElement('p');
-  var y=p2.textContent=` and Your Booking Days are  :`;
+  p2.textContent=`Hello ${enteredName},Your class will be ${a4} at :`;
   article1.appendChild(p2);
-
-  var e = document.getElementById("mySelect");
-var result = e.options[e.selectedIndex].value;
- 
+  
 for(var i=0;i<savedDays.length;i++){
   var li1=document.createElement('li');
-  var x=li1.textContent=savedDays[i];
-  var z=article1.appendChild(li1);
-  
+  li1.textContent=savedDays[i];
+  article1.appendChild(li1);
 
-  alert("you have chose "+result+" sport "+y+x);
 }
+
+// console.log();
 
 
 }
