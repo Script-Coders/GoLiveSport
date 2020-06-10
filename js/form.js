@@ -11,7 +11,7 @@ var aclass1, aclass2, aclass3, aclass4;
 var classType = [aclass1, aclass2, aclass3, aclass4];
 var select;// this for SELECT in form. Used to initiate the SELECT element to aviod the doublecation
 var lable1, hr1, textArea1;// tags element in the form. Used to initiate the text area to aviod the doublecation 
-
+var enteredName;
 function Class(name, sport) {
   this.nameClass = name;
   this.sport = sport;
@@ -90,7 +90,7 @@ function bmi() {
 
   var formOrigin = document.getElementById('form1');
 
-
+enteredName=document.getElementById('fname').value;
   resetForm(); //To reset the Form
   console.log(document.getElementById('form1'));
 }
@@ -294,26 +294,24 @@ function restoreDays(){
 }
 var savedDays;// For booking days that user want **from** local storage;
 
-var article1,article2,sp;
+var article1;
 function bookingResult(){
-   article1=document.createElement('div');
-  article1.setAttribute('id','daysDev');
-  // document.getElementById('formF').appendChild(article1);
+  article1=document.createElement('div'); article1.setAttribute('id','articleId');
+  document.getElementById('main').appendChild(article1);
+  var a3=document.getElementById("mySelect").selectedIndex;// To target the selected option for class.
+  var a4=document.getElementsByTagName("option")[a3].value;// value of targeted class.
   var p2=document.createElement('p');
-  var y=p2.textContent=` and Your Booking Days are  :`;
+  p2.textContent=`Hello ${enteredName},Your class will be ${a4} at :`;
   article1.appendChild(p2);
-
-  var e = document.getElementById("mySelect");
-var result = e.options[e.selectedIndex].value;
- 
+  
 for(var i=0;i<savedDays.length;i++){
   var li1=document.createElement('li');
-  var x=li1.textContent=savedDays[i];
-  var z=article1.appendChild(li1);
-  
+  li1.textContent=savedDays[i];
+  article1.appendChild(li1);
 
-  alert("you have chose "+result+" sport "+y+x);
 }
+
+// console.log();
 
 
 }
