@@ -148,7 +148,7 @@ input[type=text] {
     #form1{
      /* background-color: black; */
      /* opacity: .3; */
-     display: inline-block;
+     display: block;
   /* width: 0; */
   
 
@@ -198,9 +198,9 @@ background-size:cover;
 
 }
 
-#daysDev{
+/* #daysDev{
 
-}
+} */
  
 #paraghForBooking{
   margin: 0px 0 0 553px;
