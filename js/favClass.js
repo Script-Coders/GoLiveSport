@@ -68,11 +68,9 @@ function renderResults() {
     showImage.appendChild(section);
 
 
-    var h2 = document.createElement('h2');
-    section.appendChild(h2);
-    h2.textContent = add.name + ' :';
 
-    img1 = document.createElement('img');
+
+    var img1 = document.createElement('img');
 
 
     section.appendChild(img1);
@@ -81,11 +79,20 @@ function renderResults() {
     img1.setAttribute('title', add.name);
     img1.setAttribute('class', 'animation');
 
+    var article = document.createElement('article');
+    article.setAttribute('class', 'articleClass');
+    section.appendChild(article);
+
+
+    var h2 = document.createElement('h2');
+    article.appendChild(h2);
+    h2.textContent = add.name;
+
 
     pContent(add.name);
 
     var p = document.createElement('p');
-    section.appendChild(p);
+    article.appendChild(p);
     p.textContent = contentToDisplay;
 
 
