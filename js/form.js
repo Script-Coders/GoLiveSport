@@ -11,7 +11,7 @@ var aclass1, aclass2, aclass3, aclass4;
 var classType = [aclass1, aclass2, aclass3, aclass4];
 var select;// this for SELECT in form. Used to initiate the SELECT element to aviod the doublecation
 var lable1, hr1, textArea1;// tags element in the form. Used to initiate the text area to aviod the doublecation 
-
+var enteredName;
 function Class(name, sport) {
   this.nameClass = name;
   this.sport = sport;
@@ -90,7 +90,7 @@ function bmi() {
 
   var formOrigin = document.getElementById('form1');
 
-
+enteredName=document.getElementById('fname').value;
   resetForm(); //To reset the Form
   console.log(document.getElementById('form1'));
 }
