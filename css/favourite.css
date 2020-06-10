@@ -3,10 +3,12 @@
     height: 400px;
     /* background-image: url(/man.jpg); */
 }
-p{
-    font-family: 'serif'; 
+
+p {
+    font-family: 'serif';
     font-size: 22px;
 }
+
 #showImage section img {
     /* margin-top: 50px; */
     /* background-color: red; */
